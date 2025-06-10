@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Board de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="projeto.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Board de tarefas</h1>
+
+    <div class="input-group">
+      <input type="text" id="taskName" placeholder="Nome da tarefa">
+      <input type="text" id="taskLabel" placeholder="Etiqueta">
+      <button class="add" onclick="addTask()">+</button>
+    </div>
+
+    <div id="taskList">
+      <!-- Tarefas padrão -->
+      <div class="task">
+        <div>
+          <strong>Implementar tela de listagem de tarefas</strong>
+          <div class="tags">
+            <span class="tag">frontend</span>
+            <span class="date">Criado em: 21/08/2024</span>
+          </div>
+        </div>
+        <button class="concluir-btn" onclick="markAsDone(this)">Concluir</button>
+      </div>
+
+      <div class="task">
+        <div>
+          <strong>Criar endpoint para cadastro de tarefas</strong>
+          <div class="tags">
+            <span class="tag">backend</span>
+            <span class="date">Criado em: 21/08/2024</span>
+          </div>
+        </div>
+        <button class="concluir-btn" onclick="markAsDone(this)">Concluir</button>
+      </div>
+
+      <div class="task done">
+        <div>
+          <strong>Implementar protótipo da listagem de tarefas</strong>
+          <div class="tags">
+            <span class="tag">ux</span>
+            <span class="date">Criado em: 21/08/2024</span>
+          </div>
+        </div>
+        <div class="checkmark">✔️</div>
+      </div>
+    </div>
+
+    <div class="footer" id="footerCount">1 tarefa concluída</div>
+  </div>
+
+  <script>
+    
+  </script>
+
+</body>
+</html>
